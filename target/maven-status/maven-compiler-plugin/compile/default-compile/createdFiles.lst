@@ -1,0 +1,9 @@
+com\akkuandidiot\pages\Homepage.class
+com\akkuandidiot\base\CrmProBase.class
+com\akkuandidiot\pages\LoginPage.class
+com\akkuandidiot\utility\TestUtility.class
+com\akkuandidiot\extentreporter\ExtentReporterListenerNG.class
+com\akkuandidiot\pages\DealsPage.class
+com\akkuandidiot\utility\WebEventListener.class
+com\akkuandidiot\pages\ContactsPage.class
+com\akkuandidiot\pages\TasksPage.class

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FREE CRM Application Test Automation Test Suite]">
+  <test name="Free CRM App Test Cases(failed)">
+    <classes>
+      <class name="com.akkuandidiot.tests.HomepageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateHomepageTitleTest"/>
+          <include name="isUsernameLabelDisplayedOnHompageTest"/>
+          <include name="clickOnContactsOnHomepage"/>
+        </methods>
+      </class> <!-- com.akkuandidiot.tests.HomepageTest -->
+      <class name="com.akkuandidiot.tests.ContactsPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.akkuandidiot.tests.ContactsPageTest -->
+    </classes>
+  </test> <!-- Free CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->

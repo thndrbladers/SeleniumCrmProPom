@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrmPro Application Test automation suite">
+
+	<test name="CrmPro Test Cases">
+	
+		<classes>
+		
+			<class name="com.akkuandidiot.tests.LoginPageTest"></class>
+			<class name="com.akkuandidiot.tests.HomepageTest"></class>
+			<class name="com.akkuandidiot.tests.ContactsPageTest"></class>						
+		</classes>
+	</test>
+</suite>

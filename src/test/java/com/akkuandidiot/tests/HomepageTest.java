@@ -43,7 +43,7 @@ public class HomepageTest extends CrmProBase{
 	  Assert.assertTrue(homepage.isUsernameLabelDisplayed(), "User Label not displayed.");
   }
   
-  @Test(priority=3,enabled=false)
+  @Test(priority=3)
   public void clickOnContactsOnHomepage() {
 	  contactsPage=homepage.clickOnContact();
   }

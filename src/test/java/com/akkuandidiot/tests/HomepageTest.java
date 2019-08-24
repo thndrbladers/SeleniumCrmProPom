@@ -33,12 +33,12 @@ public class HomepageTest extends CrmProBase{
 	  
   }
   
-  @Test(priority=1,enabled=false)
+  @Test(priority=1)
   public void validateHomepageTitleTest() {
 	  Assert.assertEquals(homepage.validateHomepageTitle(),"CRMPRO","Title not matched.");
   }
   
-  @Test(priority=2,enabled=false)
+  @Test(priority=2)
   public void isUsernameLabelDisplayedOnHompageTest() {
 	  Assert.assertTrue(homepage.isUsernameLabelDisplayed(), "User Label not displayed.");
   }

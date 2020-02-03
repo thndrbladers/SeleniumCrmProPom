@@ -23,7 +23,7 @@ public class CrmProBase {
 	public CrmProBase() {
 		try {
 			prop=new Properties();	
-			FileInputStream file=new FileInputStream("F:\\Java-Selenium\\SeleniumCrmProPom\\src\\main\\java\\com\\akkuandidiot\\config\\config.properties");
+			FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\akkuandidiot\\config\\config.properties");
 			prop.load(file);
 			}catch(IOException e) {
 				e.printStackTrace();
@@ -34,10 +34,10 @@ public class CrmProBase {
 	//Initialing drivers and setting browser and 
 	public static void initialization() {
 		if(prop.getProperty("browser").equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("chrome_driver_path"));
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+prop.getProperty("chrome_driver_path"));
 			driver=new ChromeDriver();
 		}else if(prop.getProperty("browser").contains("fiefox")) {
-			System.setProperty("webdriver.chrome.driver", prop.getProperty("firefox_driver_path"));
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+prop.getProperty("firefox_driver_path"));
 			driver=new FirefoxDriver();
 		}
 		eFiringDriver=new EventFiringWebDriver(driver);
